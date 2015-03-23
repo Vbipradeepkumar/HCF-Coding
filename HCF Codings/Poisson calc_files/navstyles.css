@@ -1,0 +1,86 @@
+﻿/* 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+TUTORIAL DROPDOWN NAVIGATION STYLES.
+Source: Adapted from Quirksmode.org
+http://www.quirksmode.org/book/examplescripts/dropdown/navstyles.css .
+NOTE 1:
+Each menu must have its own ID.  nav1 identifies a dropdown menu.
+nav2 and nav2a identify two foldout, cascading menus.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+*/
+
+ul.menutree ul {
+	display: none;
+	position: absolute;
+}
+
+ul.menutree ul.foldOut {
+	display: block;
+}
+
+ul.menutree li {
+	position: relative;
+}
+
+ul.menutree li.highlight {
+	z-index: 10;
+}
+
+/* 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+TUTORIAL DROPDOWN NAVIGATION STYLES FOR nav1, THE DROPDOWN MENU.
+Source: Adapted from Quirksmode.org
+http://www.quirksmode.org/book/examplescripts/dropdown/navstyles.css .
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+*/
+div#nav1 {
+    /*float:right;*/
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+	description: div element having ID of nav1;
+}
+
+div#nav1 li.highlight {
+	/*background-color: #cccccc; */
+	description: Menu item having class name of highlight;
+}
+
+div#nav1 ul.menutree ul {
+	top: 20px;
+	left: 0px;
+	width: 250px;
+	padding-left:12px;
+	description: First block of dropdown menu;
+}
+
+div#nav1 ul.menutree ul > li {
+	description: Menu item in first block of dropdown menu;
+}
+
+div#nav1 ul.menutree ul ul {
+	top: 10px;
+	left: 100px;
+	description: Second block of dropdown menu?;
+}
+
+/* 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+TUTORIAL DROPDOWN NAVIGATION STYLES FOR nav2, THE FOLDOUT, CASCADING MENU.
+Source: Adapted from Quirksmode.org
+http://www.quirksmode.org/book/examplescripts/dropdown/navstyles.css .
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+*/
+div#nav2 li.highlight, div#nav2a li.highlight {
+	background-color: #cccccc;
+}
+
+div#nav2 ul.menutree ul, div#nav2a ul.menutree ul {
+	top: 20px;
+	left: 30px;
+	width: 210px;
+}
+
+div#nav2 ul.menutree ul ul, div#nav2a ul.menutree ul ul  {
+
+}
